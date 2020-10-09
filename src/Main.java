@@ -29,7 +29,13 @@ public class Main {
             new HashSet<>(Arrays.asList("Julio", "Emanuel"))
         );
 
+        movies.removeMovie("Toy Story 10");
+        movies.searchMovie("Toy Story 10");
 
-        movies.showMovies();
+        movies.addActor("Toy Story 10", "Ferdinando");
+        movies.removeActor("Toy Story 10", "José");
+        movies.listActors("Toy Story 10");
+
+        movies.showAllMovies();
     }
 }

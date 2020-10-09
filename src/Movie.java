@@ -14,7 +14,6 @@ public class Movie {
         this.title = title;
         this.genre = genre;
         this.release = release;
-
         this.actors = actors;
     }
 
@@ -24,5 +23,13 @@ public class Movie {
 
     public Set<String> getActors() {
         return actors;
+    }
+
+    public void addActor(String actor){
+        this.actors.add(actor);
+    }
+
+    public void removeActor(String actor){
+        this.actors.remove(actor);
     }
 }
